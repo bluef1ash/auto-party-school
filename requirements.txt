@@ -1,0 +1,5 @@
+lxml
+pytesseract
+pillow
+pyinstaller
+thrift

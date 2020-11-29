@@ -1,0 +1,11 @@
+@charset "utf-8";
+.user {
+    margin: 0 auto;
+    width: 70%;
+    li {
+        margin: 10px 0;
+        &:last-child {
+            text-align: center;
+        }
+    }
+}

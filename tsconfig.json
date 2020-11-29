@@ -1,0 +1,61 @@
+{
+    "compilerOptions": {
+        "checkJs": true,
+        "experimentalDecorators": true,
+        "outDir": "./dist/",
+        "noImplicitAny": true,
+        "module": "commonjs",
+        "target": "ES2020",
+        "lib": [
+            "dom",
+            "esnext"
+        ],
+        "declaration": true,
+        "declarationMap": true,
+        "strict": true,
+        "pretty": true,
+        "sourceMap": true,
+        "noUnusedLocals": false,
+        "noUnusedParameters": false,
+        "noImplicitReturns": true,
+        "resolveJsonModule": true,
+        "jsx": "react",
+        "allowJs": true,
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": ".",
+        "paths": {
+            "*": ["./node_modules/*"],
+            "@src/*": ["./src/*"],
+            "@mainProcess/*": ["./src/main/*"],
+            "@renderer/*": ["./src/renderer/*"],
+            "@config/*": ["./config/*"],
+            "@font/*": ["./resources/font/*"],
+            "@image/*": ["./resources/image/*"],
+            "@library/*": ["./resources/library/*"],
+            "@scss/*": ["./resources/*"]
+        }
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "build",
+        "dist",
+        "scripts",
+        "acceptance-tests",
+        "webpack",
+        "jest",
+        "src/setupTests.ts",
+        "tslint:latest",
+        "tslint-config-prettier",
+        "prettier.config.js"
+    ],
+    "plugins": [
+        {
+            "name": "typescript-plugin-css-modules"
+        }
+    ]
+}
